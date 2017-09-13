@@ -9,6 +9,7 @@ using SnoahRpg.Model;
 
 namespace SnoahRpg.Controllers
 {
+<<<<<<< HEAD
   [Produces("application/json")]
   [Route("api/Locations")]
   public class LocationsController : Controller

@@ -25,8 +25,8 @@ namespace SnoahRpg
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = @""
-            services.AddDbContext<SnoahRpgContext>(opt => opt.UseInMemoryDatabase("Player"));
+            var connection = @"Data Source=DESKTOP-P41HVHM\SQLEXPRESS;Initial Catalog=SnoahRPG;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            services.AddDbContext<SnoahRpgContext>(opt => opt.UseSqlServer(connection));
             services.AddMvc();
             services.AddCors(options =>
            {
@@ -51,3 +51,4 @@ namespace SnoahRpg
         }
     }
 }
+>>>>>>> 1891c8b9f5096b714cb15914533b2cee0e9d567b

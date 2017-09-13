@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "asi"      : true,
   "browser"  : true,
@@ -13,3 +14,20 @@
   "undef"    : true,
   "unused"   : true
 }
+=======
+{
+  "asi"      : true,
+  "browser"  : true,
+  "eqeqeq"   : false,
+  "eqnull"   : true,
+  "es3"      : true,
+  "expr"     : true,
+  "jquery"   : true,
+  "latedef"  : true,
+  "laxbreak" : true,
+  "nonbsp"   : true,
+  "strict"   : true,
+  "undef"    : true,
+  "unused"   : true
+}
+>>>>>>> 1891c8b9f5096b714cb15914533b2cee0e9d567b

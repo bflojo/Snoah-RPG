@@ -1,3 +1,4 @@
+obj
 bin
-objs
 .DS_Store
+bower_components
