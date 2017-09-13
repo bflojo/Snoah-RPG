@@ -9,11 +9,6 @@ using SnoahRpg.Model;
 
 namespace SnoahRpg.Controllers
 {
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> 151848cf6b74594dce7b8ba219270174e8fabd71
   [Produces("application/json")]
   [Route("api/Locations")]
   public class LocationsController : Controller
@@ -35,11 +30,7 @@ namespace SnoahRpg.Controllers
 
         castleTown1.Type = "CastleTown";
 
-<<<<<<< HEAD
-        //castleTown1.Item = ;
-=======
-        castleTown1.Item = ;
->>>>>>> 151848cf6b74594dce7b8ba219270174e8fabd71
+
 
       }
     }
