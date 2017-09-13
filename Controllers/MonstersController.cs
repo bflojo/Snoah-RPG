@@ -18,7 +18,6 @@ namespace SnoahRpg.Controllers
         public MonstersController(SnoahRpgContext context)
         {
             _context = context;
-
         }
 
         // GET: api/Monsters

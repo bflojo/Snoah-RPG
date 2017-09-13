@@ -9,10 +9,7 @@ namespace SnoahRpg.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int CurrentHealth { get; set; }
-        public int MaxHealth { get; set; }
+        public int Health { get; set; }
         public string Image { get; set; }
-        public List<PlayerItem> PlayerItems { get; set; }
-        public Location CurrentLocation { get; set; }
     }
 }

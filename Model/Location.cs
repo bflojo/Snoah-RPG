@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +11,7 @@ namespace SnoahRpg.Model
         public string Name { get; set; }
         public string Image { get; set; }
         public string Type { get; set; }
-        public List<Item> Items { get; set; }
+        public string Item { get; set; }
+
     }
 }

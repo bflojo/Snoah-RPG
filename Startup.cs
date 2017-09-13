@@ -50,4 +50,5 @@ namespace SnoahRpg
             app.UseMvc();
         }
     }
+
 }
