@@ -11,6 +11,7 @@ namespace SnoahRpg.Model
         public string Name { get; set; }
         public int MaxHealth { get; set; }
         public int CurrentHealth { get; set; }
+        public int Gold { get; set; }
         public Item CurrentHelm { get; set; }
         public Item CurrentChest { get; set; }
         public Item CurrentWrist { get; set; }
