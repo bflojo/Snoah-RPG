@@ -11,9 +11,10 @@ using System;
 namespace SnoahRpg.Migrations
 {
     [DbContext(typeof(SnoahRpgContext))]
-    partial class SnoahRpgContextModelSnapshot : ModelSnapshot
+    [Migration("20170914212841_monster")]
+    partial class monster
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
