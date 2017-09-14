@@ -29,7 +29,7 @@ namespace SnoahRpg.Controllers
         // castleTown1.Image = ;
 
         castleTown1.Type = "CastleTown";
-
+        castleTown1.Item 
 
 
       }
