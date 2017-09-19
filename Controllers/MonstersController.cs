@@ -398,7 +398,7 @@ namespace SnoahRpg.Controllers
 
             };
         }
-    }
+    
 
 
 
