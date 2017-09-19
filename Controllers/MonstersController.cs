@@ -18,7 +18,6 @@ namespace SnoahRpg.Controllers
         public MonstersController(SnoahRpgContext context)
         {
             _context = context;
-<<<<<<< HEAD
 
 
         if (_context.Monster.Count() == 0)
