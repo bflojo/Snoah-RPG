@@ -18,9 +18,6 @@ namespace SnoahRpg.Controllers
         public MonstersController(SnoahRpgContext context)
         {
             _context = context;
-<<<<<<< HEAD
-
-
         if (_context.Monster.Count() == 0)
             {
                 Monster m1 = new Monster
@@ -248,7 +245,7 @@ namespace SnoahRpg.Controllers
 
 
 
-                Monster m16 = new Monster
+                Monster m17 = new Monster
                 {
                 Id = 16,
                 Name = "Vicious Cloud Dog",
@@ -263,7 +260,7 @@ namespace SnoahRpg.Controllers
 
 
 
-                Monster m17 = new Monster
+                Monster m18 = new Monster
                 {
                 Id = 17,
                 Name = "Toxic Cloud",
@@ -279,7 +276,7 @@ namespace SnoahRpg.Controllers
 
 
 
-                Monster m18 = new Monster
+                Monster m19 = new Monster
                 {
                 Id = 18,
                 Name = "Volcanic Imp",
@@ -294,7 +291,7 @@ namespace SnoahRpg.Controllers
 
 
 
-                Monster m19 = new Monster
+                Monster m20 = new Monster
                 {
                 Id = 12,
                 Name = "Magma Snake",
@@ -311,7 +308,7 @@ namespace SnoahRpg.Controllers
 
 
 
-                Monster m20 = new Monster
+                Monster m21 = new Monster
                 {
                 Id = 20,
                 Name = "Lava Dragon",
@@ -327,7 +324,7 @@ namespace SnoahRpg.Controllers
 
 
 
-                Monster m21 = new Monster
+                Monster m22 = new Monster
                 {
                 Id = 21,
                 Name = "King of Redwood Castle",
@@ -341,7 +338,7 @@ namespace SnoahRpg.Controllers
                 };
 
 
-                Monster m22 = new Monster
+                Monster m23 = new Monster
                 {
                 Id = 22,
                 Name = "Harrison True King of Redwood",
@@ -355,7 +352,7 @@ namespace SnoahRpg.Controllers
                 };
 
 
-                Monster m23 = new Monster
+                Monster m24 = new Monster
                 {
                 Id = 23,
                 Name = "Dark Magician",
@@ -369,7 +366,7 @@ namespace SnoahRpg.Controllers
                 };
 
 
-                Monster m24 = new Monster
+                Monster m25 = new Monster
                 {
                 Id = 24,
                 Name = "Tortured Soul",
@@ -383,7 +380,7 @@ namespace SnoahRpg.Controllers
                 };
 
 
-                Monster m25 = new Monster
+                Monster m26 = new Monster
                 {
                 Id = 25,
                 Name = "Evil Hotdog",
