@@ -18,6 +18,20 @@ namespace SnoahRpg.Controllers
         public MonstersController(SnoahRpgContext context)
         {
             _context = context;
+            if (_context.Monster.Count() ==0)
+            {
+                Monster m1 = new Monster
+                {
+               Id = 1,
+               Name = "Old Man",
+               Health = 1,
+               CurrentChest = null,
+               CurrentHelm = null,
+               CurrentWrist = null,
+               CurrentWeapon = null,
+               Gold = 100
+                };
+            }       
         }
 
         // GET: api/Monsters
