@@ -23,383 +23,787 @@ namespace SnoahRpg.Controllers
         if (_context.Monster.Count() == 0)
             {
                 Monster m1 = new Monster
+                
                 {
                 Id = 1,
-                Name = "Old Man",
-                Health = 1,
+                Name = "Goblin",
+                Health = 50,
+                Power = 10,
                 Image = "https://imgur.com/XckJ1D3",
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 100
-                };
+                CurrentChest = new Item {
+                    Id = 4,
+                    Name = "Chainmail Helm",
+                    Power = 10,
+                    Type = "helmet",
+                    Image = "https://i.imgur.com/gyIHymO.png",
+                },
+                CurrentWrist = new Item {
+                Id = 8,
+                Name = "Leather Bracers",
+                Power = 5,
+                Type = "wrists",
+                Image = "https://i.imgur.com/iAdsqt0.png"
+                },
+                CurrentWeapon = new Item {
+                Id = 13,
+                Name = "Wooden Sword",
+                Power = 7,
+                Type = "weapon",
+                Image = "https://i.imgur.com/B6Ul0mf.jpg"
+                }
+            };
 
                 Monster m2 = new Monster
-                {
-                Id = 2,
-                Name = "Goblin",
-                Image = "https://imgur.com/sRAyXbr",
-                Health = 10,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 100
-                };
 
-                Monster m3 = new Monster
                 {
-                Id = 3,
-                Name = "Wolf",
-                Image = "https://imgur.com/tpkkwZ1",
-                Health = 7,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 100
-                };
-
-
-                Monster m4 = new Monster
-                {
-                Id = 4,
-                Name = "Bear",
-                Image = "https://imgur.com/UyFNrWR",
-                Health = 15,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 100
-                };
-
-                Monster m5 = new Monster
-                {
-                Id = 5,
-                Name = "Orc",
-                Image = "https://imgur.com/Tev7Nl4",
-                Health = 25,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 400
-                };
-
-                Monster m6 = new Monster
-                {
+                 Id = 2,
+                 Name = "Ork",
+                 Health = 100,
+                 Power = 10,
+                 Image ="https://i.imgur.com/PYGVUix.png",
+                 CurrentHelmet = new Item {
+                 Id = 2,
+                 Name = "Chainmail Helm",
+                 Power = 10,
+                 Type = "helmet",
+                 Image = "https://i.imgur.com/G3rbn1J.png"
+                },
+                CurrentChest = new Item {
                 Id = 6,
-                Name = "Evil Knight",
-                Image = "https://imgur.com/J5z0EyT",
-                Health = 30,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 300
-                };
-
-
-
-                Monster m7 = new Monster
-                {
-                Id = 7,
-                Name = "Sand Worm",
-                Image = "https://imgur.com/xYF31OU",
-                Health = 40,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 1000
-                };
-
-                Monster m8 = new Monster
-                {
-                Id = 8,
-                Name = "Sand Yeti",
-                Image = "https://imgur.com/uQN0XUb",
-                Health = 40,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 400
-                };
-
-                Monster m9 = new Monster
-                {
-                Id = 9,
-                Name = "Cactus Patch Kid",
-                Image = "https://imgur.com/9aGsDrg",
-                Health = 100,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 400
-                };
-
-                Monster m10 = new Monster
-                {
+                Name = "Chainmail Armor",
+                Power = 20,
+                Type = "chest",
+                Image = "https://i.imgur.com/uuDawKP.png"
+                 },
+                CurrentWrist = new Item {
+                Id = 6,
+                Name = "Iron Bracers",
+                Power = 6,
+                Type = "wrist"
+                },
+                CurrentWeapon = new Item {
                 Id = 10,
-                Name = "Muad'Dib",
-                Image = "https://imgur.com/T5N8cMz",
-                Health = 200,
+                Name = "Morning Star",
+                Power = 20,
+                Type = "weapon",
+                Image = "https://i.imgur.com/47MXsHr.png"
+                }
+             };
+                
+            };
+                Monster m4 = new Monster {
+                Id = 4,
+                Name = "Cactus Patch Kid",
+                Health = 50,
+                Power = 20,
+                Image = "https://i.imgur.com/qKEAK4k.jpg",
+                CurrentHelmet = null,
                 CurrentChest = null,
-                CurrentHelm = null,
                 CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 10000
-                };
+                CurrentWeapon = null
+            };
 
-                Monster m11 = new Monster
-                {
-                Id = 11,
-                Name = "Rock Golem",
-                Image = "https://imgur.com/RiFdN89",
-                Health = 70,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 300
-                };
+                Monster m5 = new Monster 
+{
+            Id = 5,
+            Name = "Desert Yeti",
+            Health =100,
+            Power = 10,
+            Image = "https://i.imgur.com/O9AH2iE.png",
+            CurrentHelmet = null,
+            CurrentChest = null,
+            CurrentWrist = null,
+            CurrentWeapon = null
+            };
 
+             Monster m6 = new Monster
 
+  
+            {
+            Id = 6,
+            Name = "Evil Hotdog",
+            Health = 200,
+            Power = 20,
+            Image = "https://i.imgur.com/vRWj8Yt.png",
+            CurrentHelmet = null,
+            CurrentChest = null,
+            CurrentWrist = null,
+            CurrentWeapon = null
+            };  
+                    
+            Monster m7 = new Monster 
 
-                Monster m12 = new Monster
-                {
-                Id = 12,
-                Name = "Giant Snake",
-                Image = "https://imgur.com/kcfIli1",
-                Health = 100,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 200
-                };
+            {
+            Id = 7,
+            Name = "Evil Knight",
+            Health = 150,
+            Power = 30,
+            Image = "https://i.imgur.com/UlqCtjh.png",
+            CurrentHelmet = new Item {
+            Id = 3,
+            Name = "Plate Helm",
+            Power = 20,
+            Type = "helmet",
+            Image = "https://i.imgur.com/MSLjTpx.png",
+            },
+            CurrentChest = new Item {
+            Id = 7,
+            Name = "Plate Armor",
+            Power = 25,
+            Type = "chest",
+            Image = "https://i.imgur.com/ilIaLPc.png"
+            },
+            CurrentWrist = new Item {
+            Id = 6,
+            Name = "Iron Bracers",
+            Power = 6,
+            Type = "wrist"
+            },
+            CurrentWeapon = new Item {
+            Id = 14,
+            Name = "Long Sword",
+            Power = 30,
+            Type = "weapon",
+            Image = "https://i.imgur.com/qFl4976.png"
+            }
+            
+            };      
 
+            Monster m8 = new Monster
+{
+            Id = 8,
+            Name = "Dark Mage",
+            Health = 100,
+            Power = 25,
+            Image = "https://i.imgur.com/i7gpSkr.png",
+            CurrentHelmet = null,
+            CurrentChest = new Item {
+            Id = 5,
+            Name = "Quilted Armor",
+            Power = 15,
+            Type = "chest",
+            Image = "https://i.imgur.com/9oadoje.png"
+            },
+            CurrentWrist = null,
+            CurrentWeapon = new Item {
+            Id = 20,
+            Name = "Fire Wand",
+            Power = 35,
+            Type = "weapon",
+            Image = "https://i.imgur.com/Hx5cg5S.png"
+    }
+  };
+            Monster m9 = new Monster 
+            {
+            Id = 9,
+            Name = "Frozen Banshee",
+            Health = 150,
+            Power = 20,
+            Image = "https://i.imgur.com/7z1Ovo2.png",
+            CurrentHelmet = null,
+            CurrentChest = null,
+            CurrentWrist = null,
+            CurrentWeapon = new Item {
+            Id = 21,
+            Name = "Ice Wand",
+            Power = 40,
+            Type = "weapon",
+            Image = "https://i.imgur.com/Do8tVyQ.png"
+            }
+            };
 
-                Monster m13 = new Monster
-                {
-                Id = 13,
-                Name = "Frost Giant",
-                Image = "https://imgur.com/eeput4H",
-                Health = 120,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 600
-                };
+            Monster m10 = new Monster 
+            
+            {
 
-
-
-
-
-                Monster m14 = new Monster
-                {
-                Id = 14,
-                Name = "Mummy",
-                Image = "https://imgur.com/aknDbaZ",
-                Health = 100,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 1000
-                };
-
-
-                Monster m15 = new Monster
-                {
-                Id = 15,
+                Id = 10,
                 Name = "Frost Troll",
-                Image = "https://imgur.com/vQcsxLs",
-                Health = 150,
+                Health = 100,
+                Power = 12,
+                Image = "https://i.imgur.com/p3esL4H.jpg",
+                CurrentHelmet = new Item {
+                Id = 2,
+                Name = "Chainmail Helm",
+                Power = 10,
+                Type = "helmet",
+                Image = "https://i.imgur.com/G3rbn1J.png"
+                },
+                CurrentChest = new Item {
+                Id = 6,
+                Name = "Chainmail Armor",
+                Power = 20,
+                Type = "chest",
+                Image = "https://i.imgur.com/uuDawKP.png"
+                },
+                CurrentWrist = new Item {
+                Id =6,
+                Name = "Iron Bracers",
+                Power = 6,
+                Type = "wrist"
+                },
+                CurrentWeapon = null
+            };
+            
+
+            Monster m11 = new Monster 
+            {
+                Id = 11,
+                Name = "Giant Snake",
+                Health = 200,
+                Power = 10,
+                Image = "https://i.imgur.com/eRN11KR.png",
+                CurrentHelmet = null,
                 CurrentChest = null,
-                CurrentHelm = null,
                 CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 300
-                };
-
-
-
-
-
-                Monster m16 = new Monster
-                {
-                Id = 16,
-                Name = "Frozen Banshee",
-                Image = "https://imgur.com/Ul4eZaX",
-                Health = 130,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 0
-                };
-
-
-
-                Monster m17 = new Monster
-                {
-                Id = 16,
-                Name = "Vicious Cloud Dog",
-                Image = "https://imgur.com/Bi0dWXQ",
-                Health = 1,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 5
-                };
-
-
-
-                Monster m18 = new Monster
-                {
-                Id = 17,
-                Name = "Toxic Cloud",
-                Image = "https://imgur.com/huGLhY7",
-                Health = 15,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 4
-                };
-
-
-
-
-                Monster m19 = new Monster
-                {
-                Id = 18,
-                Name = "Volcanic Imp",
-                Image = "https://imgur.com/bFBJRzb",
-                Health = 300,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 200
-                };
-
-
-
-                Monster m20 = new Monster
-                {
-                Id = 12,
-                Name = "Magma Snake",
-                Image = "https://imgur.com/UzcwhLQ",
-                Health = 350,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 400
-                };
-
-
-
-
-
-                Monster m21 = new Monster
-                {
-                Id = 20,
-                Name = "Lava Dragon",
-                Image = "https://imgur.com/zLvtkZy",
-                Health = 400,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 500
-                };
-
-
-
-
-                Monster m22 = new Monster
-                {
-                Id = 21,
-                Name = "King of Redwood Castle",
-                Image = "https://imgur.com/UZzfaj2",
-                Health = 400,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 99999
-                };
-
-
-                Monster m23 = new Monster
-                {
-                Id = 22,
-                Name = "Harrison True King of Redwood",
-                Image = "https://imgur.com/boRTdBN",
-                Health = 999,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 9999999
-                };
-
-
-                Monster m24 = new Monster
-                {
-                Id = 23,
-                Name = "Dark Magician",
-                Image = "https://imgur.com/zNpB0Fx",
-                Health = 250,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 10
-                };
-
-
-                Monster m25 = new Monster
-                {
-                Id = 24,
-                Name = "Tortured Soul",
-                Image = "https://imgur.com/Mze53Or",
-                Health = 300,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 0
-                };
-
-
-                Monster m26 = new Monster
-                {
-                Id = 25,
-                Name = "Evil Hotdog",
-                Image = "https://imgur.com/5som72N",
-                Health = 1,
-                CurrentChest = null,
-                CurrentHelm = null,
-                CurrentWrist = null,
-                CurrentWeapon = null,
-                Gold = 1
-                };
-
-
-
+                CurrentWeapon = null
 
             };
-        }
+
+            Monster m12 = new Monster 
+            
+            {
+                Id = 12,
+                Name = "Lava Dragon",
+                Health = 300,
+                Power = 10,
+                Image = "https://i.imgur.com/LROimXT.jpg",
+                CurrentHelmet = null,
+                CurrentChest = null,
+                CurrentWrist = null,
+                CurrentWeapon = new Item {
+                Id = 18,
+                Name = "Dragon Dagger",
+                Power = 50,
+                Type = "weapon",
+                Image = "https://i.imgur.com/kwPiOCK.png"
+            }
+            };
+
+            Monster m13 = new Monster 
+            
+            {
+                Id = 13,
+                Name = "Magma Snake",
+                Health = 150,
+                Power = 10,
+                Image = "https://i.imgur.com/vY9qsKA.png",
+                CurrentHelmet = null,
+                CurrentChest = null,
+                CurrentWrist = null,
+                CurrentWeapon = null
+            };
+            
+            Monster m14 = new Monster 
+            
+            
+            {
+
+                Id = 14,
+                Name = "Muad' Dib",
+                Health = 75,
+                Power = 15,
+                Image = "https://i.imgur.com/XwCpGCs.png",
+                CurrentHelmet = null,
+                CurrentChest = {
+                Id = 26,
+                Name = "Medium Potion",
+                Power = 100,
+                Type = "heal",
+                Image = "https://i.imgur.com/qDkCEFe.png"
+                },
+                CurrentWrist = null,
+                CurrentWeapon = new Item {
+                Id = 17,
+                Name = "Twin Daggers",
+                Power = 25,
+                Type = "weapon",
+                Image = "https://i.imgur.com/1BCiVsW.png"
+    },
+            };
+            
+
+            Monster m15 = new Monster 
+            
+            {
+                Id = 15,
+                Name = "Mummy",
+                Health = 200,
+                Power = 5,
+                Image = "https://i.imgur.com/DbxfIiD.png",
+                CurrentHelmet = new Item {
+                Id = 27,
+                Name = "Large Potion",
+                Power = 200,
+                Type = "heal",
+                Image = "https://i.imgur.com/DdBNUSi.png"
+            },
+                CurrentChest = new Item {
+                Id = 26,
+                Name = "Medium Potion",
+                Power = 100,
+                Type = "heal",
+                Image = "https://i.imgur.com/qDkCEFe.png"
+            },
+                CurrentWrist = null,
+                CurrentWeapon = {
+                Id = 27,
+                Name = "Large Potion",
+                Power = 200,
+                Type = "heal",
+                Image = "https://i.imgur.com/DdBNUSi.png"
+            }
+            };
+
+            Monster m16 = new Monster 
+            
+            
+            
+            {
+
+                Id = 16,
+                Name = "Old Man",
+                Health = 30,
+                Power = 1,
+                Image = "https://i.imgur.com/Ue8lKY1.png",
+                CurrentHelmet = new Item {
+                Id = 27,
+                Name = "Large Potion",
+                Power = 200,
+                Type = "heal",
+                Image = "https://i.imgur.com/DdBNUSi.png"
+                },
+                CurrentChest = new Item {
+                Id = 26,
+                Name = "Medium Potion",
+                Power = 100,
+                Type = "heal",
+                Image = "https://i.imgur.com/qDkCEFe.png"
+                },
+                CurrentWrist = null,
+                CurrentWeapon = new Item {
+                Id = 27,
+                Name = "Large Potion",
+                Power = 200,
+                Type = "heal",
+                Image = "https://i.imgur.com/DdBNUSi.png"
+                }
+            };
+
+            Monster m17 = new Monster 
+            
+                {
+
+                Id = 17,
+                Name = "Rock Golem",
+                Health = 200,
+                Power = 10,
+                Image = "https://i.imgur.com/pBKoMd6.png",
+                CurrentHelmet = new Item {
+                Id =27,
+                Name = "Large Potion",
+                Power = 200,
+                Type = "heal",
+                Image = "https://i.imgur.com/DdBNUSi.png"
+                },
+                CurrentChest = new Item {
+                Id = 26,
+                Name = "Medium Potion",
+                Power = 100,
+                Type = "heal",
+                Image = "https://i.imgur.com/qDkCEFe.png"
+                },
+                CurrentWrist = null,
+                CurrentWeapon = new Item {
+                Id = 11,
+                Name = "War Hammer",
+                Power = 40,
+                Type = "weapon",
+                Image = "https://i.imgur.com/nNjnfMu.png"
+                }
+                };
+
+
+
+
+
+
+
+
+            }
+
+            
+                    
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 100
+        //         };
+
+        //         Monster m2 = new Monster
+        //         {
+        //         Id = 2,
+        //         Name = "Goblin",
+        //         Image = "https://imgur.com/sRAyXbr",
+        //         Health = 10,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 100
+        //         };
+
+        //         Monster m3 = new Monster
+        //         {
+        //         Id = 3,
+        //         Name = "Wolf",
+        //         Image = "https://imgur.com/tpkkwZ1",
+        //         Health = 7,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 100
+        //         };
+
+
+        //         Monster m4 = new Monster
+        //         {
+        //         Id = 4,
+        //         Name = "Bear",
+        //         Image = "https://imgur.com/UyFNrWR",
+        //         Health = 15,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 100
+        //         };
+
+        //         Monster m5 = new Monster
+        //         {
+        //         Id = 5,
+        //         Name = "Orc",
+        //         Image = "https://imgur.com/Tev7Nl4",
+        //         Health = 25,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 400
+        //         };
+
+        //         Monster m6 = new Monster
+        //         {
+        //         Id = 6,
+        //         Name = "Evil Knight",
+        //         Image = "https://imgur.com/J5z0EyT",
+        //         Health = 30,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 300
+        //         };
+
+
+
+        //         Monster m7 = new Monster
+        //         {
+        //         Id = 7,
+        //         Name = "Sand Worm",
+        //         Image = "https://imgur.com/xYF31OU",
+        //         Health = 40,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 1000
+        //         };
+
+        //         Monster m8 = new Monster
+        //         {
+        //         Id = 8,
+        //         Name = "Sand Yeti",
+        //         Image = "https://imgur.com/uQN0XUb",
+        //         Health = 40,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 400
+        //         };
+
+        //         Monster m9 = new Monster
+        //         {
+        //         Id = 9,
+        //         Name = "Cactus Patch Kid",
+        //         Image = "https://imgur.com/9aGsDrg",
+        //         Health = 100,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 400
+        //         };
+
+        //         Monster m10 = new Monster
+        //         {
+        //         Id = 10,
+        //         Name = "Muad'Dib",
+        //         Image = "https://imgur.com/T5N8cMz",
+        //         Health = 200,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 10000
+        //         };
+
+        //         Monster m11 = new Monster
+        //         {
+        //         Id = 11,
+        //         Name = "Rock Golem",
+        //         Image = "https://imgur.com/RiFdN89",
+        //         Health = 70,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 300
+        //         };
+
+
+
+        //         Monster m12 = new Monster
+        //         {
+        //         Id = 12,
+        //         Name = "Giant Snake",
+        //         Image = "https://imgur.com/kcfIli1",
+        //         Health = 100,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 200
+        //         };
+
+
+        //         Monster m13 = new Monster
+        //         {
+        //         Id = 13,
+        //         Name = "Frost Giant",
+        //         Image = "https://imgur.com/eeput4H",
+        //         Health = 120,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 600
+        //         };
+
+
+
+
+
+        //         Monster m14 = new Monster
+        //         {
+        //         Id = 14,
+        //         Name = "Mummy",
+        //         Image = "https://imgur.com/aknDbaZ",
+        //         Health = 100,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 1000
+        //         };
+
+
+        //         Monster m15 = new Monster
+        //         {
+        //         Id = 15,
+        //         Name = "Frost Troll",
+        //         Image = "https://imgur.com/vQcsxLs",
+        //         Health = 150,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 300
+        //         };
+
+
+
+
+
+        //         Monster m16 = new Monster
+        //         {
+        //         Id = 16,
+        //         Name = "Frozen Banshee",
+        //         Image = "https://imgur.com/Ul4eZaX",
+        //         Health = 130,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 0
+        //         };
+
+
+
+        //         Monster m17 = new Monster
+        //         {
+        //         Id = 16,
+        //         Name = "Vicious Cloud Dog",
+        //         Image = "https://imgur.com/Bi0dWXQ",
+        //         Health = 1,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 5
+        //         };
+
+
+
+        //         Monster m18 = new Monster
+        //         {
+        //         Id = 17,
+        //         Name = "Toxic Cloud",
+        //         Image = "https://imgur.com/huGLhY7",
+        //         Health = 15,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 4
+        //         };
+
+
+
+
+        //         Monster m19 = new Monster
+        //         {
+        //         Id = 18,
+        //         Name = "Volcanic Imp",
+        //         Image = "https://imgur.com/bFBJRzb",
+        //         Health = 300,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 200
+        //         };
+
+
+
+        //         Monster m20 = new Monster
+        //         {
+        //         Id = 12,
+        //         Name = "Magma Snake",
+        //         Image = "https://imgur.com/UzcwhLQ",
+        //         Health = 350,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 400
+        //         };
+
+
+
+
+
+        //         Monster m21 = new Monster
+        //         {
+        //         Id = 20,
+        //         Name = "Lava Dragon",
+        //         Image = "https://imgur.com/zLvtkZy",
+        //         Health = 400,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 500
+        //         };
+
+
+
+
+        //         Monster m22 = new Monster
+        //         {
+        //         Id = 21,
+        //         Name = "King of Redwood Castle",
+        //         Image = "https://imgur.com/UZzfaj2",
+        //         Health = 400,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 99999
+        //         };
+
+
+        //         Monster m23 = new Monster
+        //         {
+        //         Id = 22,
+        //         Name = "Harrison True King of Redwood",
+        //         Image = "https://imgur.com/boRTdBN",
+        //         Health = 999,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 9999999
+        //         };
+
+
+        //         Monster m24 = new Monster
+        //         {
+        //         Id = 23,
+        //         Name = "Dark Magician",
+        //         Image = "https://imgur.com/zNpB0Fx",
+        //         Health = 250,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 10
+        //         };
+
+
+        //         Monster m25 = new Monster
+        //         {
+        //         Id = 24,
+        //         Name = "Tortured Soul",
+        //         Image = "https://imgur.com/Mze53Or",
+        //         Health = 300,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 0
+        //         };
+
+
+        //         Monster m26 = new Monster
+        //         {
+        //         Id = 25,
+        //         Name = "Evil Hotdog",
+        //         Image = "https://imgur.com/5som72N",
+        //         Health = 1,
+        //         CurrentChest = null,
+        //         CurrentHelm = null,
+        //         CurrentWrist = null,
+        //         CurrentWeapon = null,
+        //         Gold = 1
+        //         };
+
+
+
+
+        //     };
+        // }
     
 
 
