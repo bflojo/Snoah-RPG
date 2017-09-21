@@ -18,278 +18,257 @@ namespace SnoahRpg.Controllers
         public ItemsController(SnoahRpgContext context)
         {
             _context = context;
-        if (_context.Item.Count() == 0)
+            if (_context.Item.Count() == 0)
             {
 
                 Item h1 = new Item
                 {
                     Id = 1,
                     Name = "Leather Cap",
-                    Power = 25,
-                    Type = "head",
-                    Image = "https://imgur.com/B8ISUAu"
+                    Power = 5,
+                    Type = "helmet",
+                    Image = "https://i.imgur.com/tFG1KOM.png"
                 };
 
                 Item h2 = new Item
                 {
                     Id = 2,
-                    Name = "Chain Helm",
-                    Power = 50,
-                    Type = "head",
-                    Image = "https://imgur.com/76AQtlL"
+                    Name = "Chainmail Helm",
+                    Power = 10,
+                    Type = "helmet",
+                    Image = "https://i.imgur.com/G3rbn1J.png"
                 };
-
 
                 Item h3 = new Item
                 {
                     Id = 3,
                     Name = "Plate Helm",
-                    Power = 25,
-                    Type = "head",
-                    Image = "https://imgur.com/omtahia"
-
-                };
-
-                Item c1 = new Item
-                {
-                    Id = 4,
-                    Name = "Quilted armor",
-                    Power = 100,
-                    Type = "chest",
-                    Image = "https://imgur.com/dpsPcKY"
-                };
-
-
-                Item c2 = new Item
-                {
-                    Id = 5,
-                    Name = "Studed Armor",
-                    Power = 150,
-                    Type = "chest",
-                    Image = "https://imgur.com/p4Ej6Vy"
-                };
-
-
-                Item c3 = new Item
-                {
-                    Id = 6,
-                    Name = "Chainmail Armor",
-                    Power = 200,
-                    Type = "chest",
-                    Image = "https://imgur.com/lroGpF6"
-                };
-
-
-                Item c4 = new Item
-                {
-                    Id = 7,
-                    Name = "Plate Armor",
-                    Power = 300,
-                    Type = "chest",
-                    Image = "https://imgur.com/qJ6IFu5"
-                };
-
-
-                Item w1 = new Item
-                {
-                    Id = 8,
-                    Name = "Leather Bracers",
                     Power = 20,
-                    Type = "wrist",
-                    Image = "https://imgur.com/xqJIVeH"
+                    Type = "helmet",
+                    Image = "https://i.imgur.com/MSLjTpx.png"
+
                 };
-
-
-                Item e3 = new Item
-                {
-                    Id = 9,
-                    Name = "Bands of Sweat Protection",
-                    Power = 2,
-                    Type = "unique",
-                    Image = "https://imgur.com/Y6CrlfY"
-                };
-
-
-                Item d1 = new Item
-                {
-                    Id = 10,
-                    Name = "Rusty Dagger",
-                    Power = 25,
-                    Type = "weapon",
-                    Image = "https://imgur.com/6SKUvJJ"
-                };
-
-
-                Item d2 = new Item
-                {
-                    Id = 11,
-                    Name = "Dual Daggers",
-                    Power = 50,
-                    Type = "weapon",
-                    Image = "https://imgur.com/nusUMRH"
-                };
-
-
-                Item d3 = new Item
-                {
-                    Id = 12,
-                    Name = "Dragon Dagger",
-                    Power = 90,
-                    Type = "weapon",
-                    Image = "https://imgur.com/PtqULrc"
-                };
-
-
-                Item s1 = new Item
-                {
-                    Id = 13,
-                    Name = "wooden sword",
-                    Power = 15,
-                    Type = "weapon",
-                    Image = "https://imgur.com/YStzpVp"
-                };
-
-
-
-                Item s2 = new Item
-                {
-                    Id = 14,
-                    Name = "Rusty sword",
-                    Power = 35,
-                    Type = "weapon",
-                    Image = "https://imgur.com/c4HbG01"
-                };
-
-
-                Item s3 = new Item
-                {
-                    Id = 15,
-                    Name = "Long Sword",
-                    Power = 60,
-                    Type = "weapon",
-                    Image = "https://imgur.com/gZbFzR7"
-                };
-
-
-                Item s4 = new Item
-                {
-                    Id = 16,
-                    Name = "Epic Sword",
-                    Power = 150,
-                    Type = "weapon",
-                    Image = "https://imgur.com/0wRqAkq"
-                };
-
-
-                Item m1 = new Item
-                {
-                    Id = 17,
-                    Name = "Morningstar",
-                    Power = 45,
-                    Type = "weapon",
-                    Image = "https://imgur.com/Bkkg8Oi"
-                };
-
-
-                Item m2 = new Item
-                {
-                    Id = 18,
-                    Name = "Warhammer",
-                    Power = 80,
-                    Type = "weapon",
-                    Image = "https://imgur.com/XTUJ0MO"
-                };
-
-
-                Item m3 = new Item
-                {
-                    Id = 19,
-                    Name = "Maul",
-                    Power = 120,
-                    Type = "weapon",
-                    Image = "https://imgur.com/g4M8vqu"
-                };
-
 
                 Item a1 = new Item
                 {
-                    Id = 20,
-                    Name = "Fire Wand",
-                    Power = 15,
-                    Type = "weapon",
-                    Image = "https://imgur.com/T6nP8q4"
+                    Id = 4,
+                    Name = "Studed Leather Armor",
+                    Power = 10,
+                    Type = "chest",
+                    Image = "https://i.imgur.com/QcXVP0b.png"
                 };
-
+                
                 Item a2 = new Item
                 {
-                    Id = 21,
-                    Name = "Ice Wand",
-                    Power = 60,
-                    Type = "weapon",
-                    Image = "https://imgur.com/z1GnCeA"
+                    Id = 5,
+                    Name = "Quilted armor",
+                    Power = 15,
+                    Type = "chest",
+                    Image = "https://i.imgur.com/9oadoje.png"
                 };
 
 
                 Item a3 = new Item
                 {
-                    Id = 22,
-                    Name = "Explosive Staff",
-                    Power = 500,
-                    Type = "weapon",
-                    Image = "https://imgur.com/mVFZVTN"
+                    Id = 6,
+                    Name = "Chainmail Armor",
+                    Power = 20,
+                    Type = "chest",
+                    Image = "https://i.imgur.com/uuDawKP.png"
                 };
 
+                Item a4 = new Item
+                {
+                    Id = 7,
+                    Name = "Plate Armor",
+                    Power = 25,
+                    Type = "chest",
+                    Image = "https://i.imgur.com/ilIaLPc.png"
+                };
 
-                Item e1 = new Item
+                Item a5 = new Item
+                {
+                    Id = 8,
+                    Name = "Leather Bracers",
+                    Power = 5,
+                    Type = "wrist",
+                    Image = "https://i.imgur.com/iAdsqt0.png"
+                };
+
+                Item w1 = new Item
+                {
+                    Id = 9,
+                    Name = "Maul",
+                    Power = 60,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/hXAEbM1.png"
+                };
+
+                Item w2 = new Item
+                {
+                    Id = 10,
+                    Name = "Morning Star",
+                    Power = 20,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/47MXsHr.png"
+                };
+
+                Item w3 = new Item
+                {
+                    Id = 11,
+                    Name = "War Hammer",
+                    Power = 40,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/nNjnfMu.png"
+                };
+
+                Item w4 = new Item
+                {
+                    Id = 12,
+                    Name = "Rusty Sword",
+                    Power = 10,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/LARZT7I.png"
+                };
+
+                Item w5 = new Item
+                {
+                    Id = 13,
+                    Name = "wooden sword",
+                    Power = 7,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/B6Ul0mf.jpg"
+                };
+
+                Item w6 = new Item
+                {
+                    Id = 14,
+                    Name = "Long Sword",
+                    Power = 30,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/qFl4976.png"
+                };
+
+                Item w7 = new Item
+                {
+                    Id = 15,
+                    Name = "EPIC Sword",
+                    Power = 70,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/poj0jfC.png"
+                };
+
+                Item w8 = new Item
+                {
+                    Id = 16,
+                    Name = "Rusty Daggers",
+                    Power = 10,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/50DTMnJ.png"
+                };
+
+                Item w9 = new Item
+                {
+                    Id = 17,
+                    Name = "Twin Daggers",
+                    Power = 25,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/1BCiVsW.png"
+                
+                };
+
+                Item w10 = new Item
+                {
+                     Id = 18,
+                    Name = "Dragon Dagger",
+                    Power = 50,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/kwPiOCK.png" 
+                    
+                };
+
+                Item w11 = new Item
+                {
+                    Id = 19,
+                    Name = "Explosive Staff",
+                    Power = 60,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/u0JVNz2.png"
+                };
+
+                Item w12 = new Item
+                {
+                    Id = 20,
+                    Name = "Fire Wand",
+                    Power = 35,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/Hx5cg5S.png"
+                };
+
+                Item w13 = new Item
+                {
+                    Id = 21,
+                    Name = "Ice Wand",
+                    Power = 40,
+                    Type = "weapon",
+                    Image = "https://i.imgur.com/Do8tVyQ.png"
+                };
+
+                Item o1 = new Item
+                {
+                    Id = 22,
+                    Name = "Golden Ball",
+                    Power = 0,
+                    Type = "other",
+                    Image = "https://i.imgur.com/RvJZNk9.jpg"
+                };
+
+                Item o2 = new Item
                 {
                     Id = 23,
                     Name = "Golden Paddle",
-                    Power = 999,
-                    Type = "unique",
-                    Image = "https://imgur.com/sSC30Sf"
+                    Power = 0,
+                    Type = "other",
+                    Image = "https://i.imgur.com/feoJp0d.png"
                 };
 
-
-                Item e2 = new Item
+                Item o3 = new Item
                 {
                     Id = 24,
-                    Name = "Golden Ball",
-                    Power = 999,
-                    Type = "unique",
-                    Image = "https://imgur.com/3Dn1nK4"
+                    Name = "Golden Sweat Bands",
+                    Power = 0,
+                    Type = "other",
+                    Image = "https://i.imgur.com/x28nL5x.png"
                 };
 
-
-                Item l1 = new Item
+                Item o4 = new Item
                 {
                     Id = 25,
-                    Name = "Weak Healing Pot",
-                    Power = 25,
+                    Name = "Small Potion",
+                    Power = 50,
                     Type = "heal",
-                    Image = "https://imgur.com/Shv8V3e"
+                    Image = "https://i.imgur.com/EmmAL5V.png"
                 };
 
-
-                Item l2 = new Item
+                Item o5 = new Item
                 {
                     Id = 26,
-                    Name = "Strong Health Pot",
-                    Power = 60,
-                    Type = "heal",
-                    Image = "https://imgur.com/PMeJsVL"
-                };
-
-
-                Item l3 = new Item
-                {
-                    Id = 27,
-                    Name = "Full Health Pot",
+                    Name = "Medium Potion",
                     Power = 100,
                     Type = "heal",
-                    Image = "https://imgur.com/Rz2mBfm"
+                    Image = "https://i.imgur.com/qDkCEFe.png"
                 };
+
+                Item o6 = new Item
+                {
+                    Id = 27,
+                    Name = "Large Potion",
+                    Power = 200,
+                    Type = "heal",
+                    Image = "https://i.imgur.com/DdBNUSi.png"
+                };
+            }
         }
-    }
         // GET: api/Items
         [HttpGet]
         public IEnumerable<Item> GetItem()
