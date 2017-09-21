@@ -18,9 +18,7 @@ namespace SnoahRpg.Controllers
         public MonstersController(SnoahRpgContext context)
         {
             _context = context;
-
-
-        if (_context.Monster.Count() == 0)
+            if (_context.Monster.Count() == 0)
             {
                 Monster m1 = new Monster
                 

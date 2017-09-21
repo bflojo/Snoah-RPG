@@ -13,7 +13,5 @@ namespace SnoahRpg.Model
         public int Power { get; set; }
         public string Type { get; set; }
         public string Image { get; set; }
-
-
     }
 }
