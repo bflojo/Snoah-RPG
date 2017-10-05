@@ -24,18 +24,17 @@ namespace SnoahRpg
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            var connection = @"Data Source=DESKTOP-P41HVHM\SQLEXPRESS;Initial Catalog=SnoahRPG;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            services.AddDbContext<SnoahRpgContext>(opt => opt.UseSqlServer(connection));
+        {            
+            services.AddDbContext<SnoahRpgContext>(opt => opt.UseInMemoryDatabase("Player"));
             services.AddMvc();
             services.AddCors(options =>
-           {
-               options.AddPolicy("CorsPolicy",
-                   builder => builder.AllowAnyOrigin()
-                   .AllowAnyMethod()
-                   .AllowAnyHeader()
-                   .AllowCredentials());
-           });
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

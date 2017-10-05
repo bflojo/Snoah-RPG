@@ -1,0 +1,59 @@
+locations
+castle
+	castle 1 https://i.imgur.com/DxHULEV.jpg
+	castle 2 https://imgur.com/Eea85aq
+	castle 3 https://imgur.com/VETxcXf
+	castle 4 https://imgur.com/UNgvAor
+		hidden room 1 https://imgur.com/M1NEFEq
+		hidden room 2 https://imgur.com/s6zpFNL
+cave
+	cave 1 https://imgur.com/cUfMnf8
+	cave 2 https://imgur.com/QUNi8wN
+cloud city
+	cloud city 1 https://imgur.com/sKG8TGz
+	cloud city 2 https://imgur.com/awh2Lzd
+desert
+	desert 1 https://imgur.com/ivnnPAu
+	desert 2 https://imgur.com/rnkx7BN
+	desert 3 https://imgur.com/op6K9AR
+		desert 3 cave 1 https://imgur.com/PEGIMJ9
+		desert 3 cave 2 https://imgur.com/9HVBQJM
+	desert 4 https://imgur.com/43sMyuW
+	desert 5 (oasis 1) https://imgur.com/ttAZqXU
+		oasis 2 (boss battle) https://imgur.com/YzEb6w4
+		oasis 3 https://imgur.com/z3dXdvR
+		oasis 4 https://imgur.com/Pr3fzzh
+forest
+	forest 1 https://imgur.com/1LEQutv
+	forest 2 https://imgur.com/1JZezCN
+	forest 3 https://imgur.com/oz9if8c
+	forest 4 https://imgur.com/iy4ePaa
+		forest 4 to mountains https://imgur.com/ltJBFcR
+mountains
+	mountain 1 https://imgur.com/FOuIIrh
+	mountain 2 https://imgur.com/sTVbIic
+	mountain 3 https://imgur.com/lvASEcX
+		mountain 3 snow path https://imgur.com/DQSZAXn
+rocky path
+	rocky path 1 https://imgur.com/Iv6psXn
+	rocky path 2 https://imgur.com/dtY1r3N
+ruins
+	ruins 1 https://imgur.com/ySWJX0x
+	ruins 2 (left) https://imgur.com/yVHOvzp
+	ruins 2 (right) https://imgur.com/E1sEBPj
+	ruins 2 https://imgur.com/h4Kij1b
+	ruins 3 (left) https://imgur.com/m00FbKj
+snow
+	snow 1 https://imgur.com/FgVVgpR
+	snow 2 https://imgur.com/YcptPDb
+	snow 3 https://imgur.com/FgVVgpR
+	snow 4 https://imgur.com/wwFEqED
+	snow 5 https://imgur.com/gXhpBPQ
+volcano
+	volcano 1 https://imgur.com/vvcBzQ4
+	volcano 2 https://imgur.com/LCEnJkp
+	volcano 3 https://imgur.com/bUrg6dV
+	volcano 4 https://imgur.com/fxI262D
+	volcano 5 https://imgur.com/E5htIss
+
+

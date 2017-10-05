@@ -22,327 +22,375 @@ namespace SnoahRpg.Controllers
 
             if (_context.Location.Count() == 0)
             {
-                Location l1 = new Location
+                
+                Location l1 = new Location();
                 {
-                    Id = 1,
-                    Name = "Forest 1",
-                    Image = "https://i.imgur.com/1LEQutv.jpg"
+                    l1.Id = 1;
+                    l1.Name = "Forest 1";
+                    l1.Image = "https://i.imgur.com/1LEQutv.jpg";
                 };
-
-                Location l2 = new Location
+                _context.Location.Add(l1);
+                _context.SaveChanges();
+                Location l2 = new Location();
                 {
-                    Id = 2,
-                    Name = "Forest 2",
-                    Image = "https://i.imgur.com/1JZezCN.jpg"
+                    l2.Id = 2;
+                    l2.Name = "Forest 2";
+                    l2.Image = "https://i.imgur.com/1JZezCN.jpg";
                 };
-
-                Location l3 = new Location
+                _context.Location.Add(l2);
+                _context.SaveChanges();
+                Location l3 = new Location();
                 {
-                    Id = 3,
-                    Name = "Forest 3",
-                    Image = "https://i.imgur.com/oz9if8c.jpg"
+                    l3.Id = 3;
+                    l3.Name = "Forest 3";
+                    l3.Image = "https://i.imgur.com/oz9if8c.jpg";
                 };
-
-                Location l4 = new Location
+                _context.Location.Add(l3);
+                _context.SaveChanges();
+                Location l4 = new Location();
                 {
-                    Id = 4,
-                    Name = "Forest 4",
-                    Image = "https://i.imgur.com/VXfa18m.jpg"
+                    l4.Id = 4;
+                    l4.Name = "Forest 4";
+                    l4.Image = "https://i.imgur.com/VXfa18m.jpg";
                 };
-
-                Location l5 = new Location
+                _context.Location.Add(l4);
+                _context.SaveChanges();
+                Location l5 = new Location();
                 {
-                    Id = 5,
-                    Name = "Forest 4 To Mountain",
-                    Image = "https://i.imgur.com/ltJBFcR.jpg"
+                    l5.Id = 5;
+                    l5.Name = "Forest 4 To Mountain";
+                    l5.Image = "https://i.imgur.com/ltJBFcR.jpg";
                 };
-
-                Location l6 = new Location
+                _context.Location.Add(l5);
+                _context.SaveChanges();
+                Location l6 = new Location();
                 {
-                    Id = 6,
-                    Name = "Mountain 1",
-                    Image = "https://i.imgur.com/FOuIIrh.jpg"
+                    l6.Id = 6;
+                    l6.Name = "Mountain 1";
+                    l6.Image = "https://i.imgur.com/FOuIIrh.jpg";
                 };
-
-                Location l7 = new Location
+                _context.Location.Add(l6);
+                _context.SaveChanges();
+                Location l7 = new Location();
                 {
-                    Id = 7,
-                    Name = "CMountain",
-                    Image = "https://i.imgur.com/sTVbIic.jpg"
+                    l7.Id = 7;
+                    l7.Name = "Mountain 2";
+                    l7.Image = "https://i.imgur.com/sTVbIic.jpg";
                 };
-
-                Location l8 = new Location
+                _context.Location.Add(l7);
+                _context.SaveChanges();
+                Location l8 = new Location();
                 {
-                    Id = 8,
-                    Name = "Mountain 3",
-                    Image = "https://i.imgur.com/lvASEcX.jpg"
+                    l8.Id = 8;
+                    l8.Name = "Mountain 3";
+                    l8.Image = "https://i.imgur.com/lvASEcX.jpg";
                 };
-
-                Location l9 = new Location
+                _context.Location.Add(l8);
+                _context.SaveChanges();
+                Location l9 = new Location();
                 {
-                    Id = 9,
-                    Name = "Mountain 3 Snow Mountain",
-                    Image = "https://i.imgur.com/DQSZAXn.jpg"
+                    l9.Id = 9;
+                    l9.Name = "Mountain 3 Snow Mountain";
+                    l9.Image = "https://i.imgur.com/DQSZAXn.jpg";
                 };
-
-                Location l10 = new Location
+                _context.Location.Add(l9);
+                _context.SaveChanges();
+                Location l10 = new Location();
                 {
-                    Id = 10,
-                    Name = "Snow 1",
-                    Image = "https://i.imgur.com/FgVVgpR.jpg"
+                    l10.Id = 10;
+                    l10.Name = "Snow 1";
+                    l10.Image = "https://i.imgur.com/FgVVgpR.jpg";
                 };
-                Location l11 = new Location
+                _context.Location.Add(l10);
+                _context.SaveChanges();
+                Location l11 = new Location();
                 {
-                    Id = 11,
-                    Name = "Snow 2",
-                    Image = "https://i.imgur.com/YcptPDb.jpg"
+                    l11.Id = 11;
+                    l11.Name = "Snow 2";
+                    l11.Image = "https://i.imgur.com/YcptPDb.jpg";
                 };
-
-                Location l12 = new Location
+                _context.Location.Add(l11);
+                _context.SaveChanges();
+                Location l12 = new Location();
                 {
-                    Id = 12,
-                    Name = "Snow 3",
-                    Image = "https://i.imgur.com/FgVVgpR.jpg"
+                    l12.Id = 12;
+                    l12.Name = "Snow 3";
+                    l12.Image = "https://i.imgur.com/FgVVgpR.jpg";
                 };
-
-                Location l13 = new Location
+                _context.Location.Add(l12);
+                _context.SaveChanges();
+                Location l13 = new Location();
                 {
-                    Id = 13,
-                    Name = "Snow 4",
-                    Image = "https://i.imgur.com/wwFEqED.jpg"
+                    l13.Id = 13;
+                    l13.Name = "Snow 4";
+                    l13.Image = "https://i.imgur.com/wwFEqED.jpg";
                 };
-
-                Location l14 = new Location
+                _context.Location.Add(l13);
+                _context.SaveChanges();
+                Location l14 = new Location();
                 {
-                    Id = 14,
-                    Name = "Snow 5",
-                    Image = "https://i.imgur.com/gXhpBPQ.jpg"
+                    l14.Id = 14;
+                    l14.Name = "Snow 5";
+                    l14.Image = "https://i.imgur.com/gXhpBPQ.jpg";
                 };
-
-                Location l15 = new Location
+                _context.Location.Add(l14);
+                _context.SaveChanges();
+                Location l15 = new Location();
                 {
-                    Id = 15,
-                    Name = "Rocky Path 1",
-                    Image = "https://i.imgur.com/Iv6psXn.jpg"
+                    l15.Id = 15;
+                    l15.Name = "Rocky Path 1";
+                    l15.Image = "https://i.imgur.com/Iv6psXn.jpg";
                 };
-
-                Location l16 = new Location
+                _context.Location.Add(l15);
+                _context.SaveChanges();
+                Location l16 = new Location();
                 {
-                    Id = 16,
-                    Name = "Rocky Path 2",
-                    Image = "https://i.imgur.com/dtY1r3N.jpg"
+                    l16.Id = 16;
+                    l16.Name = "Rocky Path 2";
+                    l16.Image = "https://i.imgur.com/dtY1r3N.jpg";
                 };
-
-                Location l17 = new Location
+                _context.Location.Add(l16);
+                _context.SaveChanges();
+                Location l17 = new Location();
                 {
-                    Id = 17,
-                    Name = "Volcano 1",
-                    Image = "https://i.imgur.com/vvcBzQ4.jpg"
+                    l17.Id = 17;
+                    l17.Name = "Volcano 1";
+                    l17.Image = "https://i.imgur.com/vvcBzQ4.jpg";
                 };
-
-                Location l18 = new Location
+                _context.Location.Add(l17);
+                _context.SaveChanges();
+                Location l18 = new Location();
                 {
-                    Id = 18,
-                    Name = "Volcano 2",
-                    Image = "https://i.imgur.com/LCEnJkp.jpg"
+                    l18.Id = 18;
+                    l18.Name = "Volcano 2";
+                    l18.Image = "https://i.imgur.com/LCEnJkp.jpg";
                 };
-
-                Location l19 = new Location
+                _context.Location.Add(l18);
+                _context.SaveChanges();
+                Location l19 = new Location();
                 {
-                    Id = 19,
-                    Name = "Volcano 3",
-                    Image = "https://i.imgur.com/bUrg6dV.jpg"
+                    l19.Id = 19;
+                    l19.Name = "Volcano 3";
+                    l19.Image = "https://i.imgur.com/bUrg6dV.jpg";
                 };
-
-                Location l20 = new Location
+                _context.Location.Add(l19);
+                _context.SaveChanges();
+                Location l20 = new Location();
                 {
-                    Id = 20,
-                    Name = "Volcano 4",
-                    Image = "https://i.imgur.com/fxI262Dg.jpg"
+                    l20.Id = 20;
+                    l20.Name = "Volcano 4";
+                    l20.Image = "https://i.imgur.com/fxI262Dg.jpg";
                 };
-
-                Location l21 = new Location
+                _context.Location.Add(l20);
+                _context.SaveChanges();
+                Location l21 = new Location();
                 {
-                    Id = 21,
-                    Name = "Volcano 5",
-                    Image = "https://i.imgur.com/E5htIss.jpg"
+                    l21.Id = 21;
+                    l21.Name = "Volcano 5";
+                    l21.Image = "https://i.imgur.com/E5htIss.jpg";
                 };
-
-                Location l22 = new Location
+                _context.Location.Add(l21);
+                _context.SaveChanges();
+                Location l22 = new Location();
                 {
-                    Id = 22,
-                    Name = "Castle 1",
-                    Image = "https://i.imgur.com/DxHULEV.jpg"
+                    l22.Id = 22;
+                    l22.Name = "Castle 1";
+                    l22.Image = "https://i.imgur.com/DxHULEV.jpg";
                 };
-
-                Location l23 = new Location
+                _context.Location.Add(l22);
+                _context.SaveChanges();
+                Location l23 = new Location();
                 {
-                    Id = 23,
-                    Name = "Castle 2",
-                    Image = "https://i.imgur.com/Eea85aq.jpg"
+                    l23.Id = 23;
+                    l23.Name = "Castle 2";
+                    l23.Image = "https://i.imgur.com/Eea85aq.jpg";
                 };
-
-                Location l24 = new Location
+                _context.Location.Add(l23);
+                _context.SaveChanges();
+                Location l24 = new Location();
                 {
-                    Id = 24,
-                    Name = "Castle 3",
-                    Image = "https://i.imgur.com/VETxcXf.jpg"
+                    l24.Id = 24;
+                    l24.Name = "Castle 3";
+                    l24.Image = "https://i.imgur.com/VETxcXf.jpg";
                 };
-
-                Location l25 = new Location
+                _context.Location.Add(l24);
+                _context.SaveChanges();
+                Location l25 = new Location();
                 {
-                    Id = 25,
-                    Name = "Castle 4",
-                    Image = "https://i.imgur.com/UNgvAor.jpg"
+                    l25.Id = 25;
+                    l25.Name = "Castle 4";
+                    l25.Image = "https://i.imgur.com/UNgvAor.jpg";
                 };
-
-                Location l26 = new Location
+                _context.Location.Add(l25);
+                _context.SaveChanges();
+                Location l26 = new Location();
                 {
-                    Id = 26,
-                    Name = "Castle Hidden Room 1",
-                    Image = "https://i.imgur.com/M1NEFEq.jpg"
+                    l26.Id = 26;
+                    l26.Name = "Castle Hidden Room 1";
+                    l26.Image = "https://i.imgur.com/M1NEFEq.jpg";
                 };
-
-                Location l27 = new Location
+                _context.Location.Add(l26);
+                _context.SaveChanges();
+                Location l27 = new Location();
                 {
-                    Id = 27,
-                    Name = "Castle Hidden Room 2",
-                    Image = "https://i.imgur.com/s6zpFNL.jpg"
+                    l27.Id = 27;
+                    l27.Name = "Castle Hidden Room 2";
+                    l27.Image = "https://i.imgur.com/s6zpFNL.jpg";
                 };
-
-                Location l28 = new Location
+                _context.Location.Add(l27);
+                _context.SaveChanges();
+                Location l28 = new Location();
                 {
-                    Id = 28,
-                    Name = "Desert 1",
-                    Image = "https://i.imgur.com/ivnnPAu.jpg"
+                    l28.Id = 28;
+                    l28.Name = "Desert 1";
+                    l28.Image = "https://i.imgur.com/ivnnPAu.jpg";
                 };
-
-                Location l29 = new Location
+                _context.Location.Add(l28);
+                _context.SaveChanges();
+                Location l29 = new Location();
                 {
-                    Id = 29,
-                    Name = "Desert 2",
-                    Image = "https://i.imgur.com/rnkx7BN.jpg"
+                    l29.Id = 29;
+                    l29.Name = "Desert 2";
+                    l29.Image = "https://i.imgur.com/rnkx7BN.jpg";
                 };
-
-                Location l30 = new Location
+                _context.Location.Add(l29);
+                _context.SaveChanges();
+                Location l30 = new Location();
                 {
-                    Id = 30,
-                    Name = "Desert 3",
-                    Image = "https://i.imgur.com/op6K9AR.jpg"
+                    l30.Id = 30;
+                    l30.Name = "Desert 3";
+                    l30.Image = "https://i.imgur.com/op6K9AR.jpg";
                 };
-
-                Location l31 = new Location
+                _context.Location.Add(l30);
+                _context.SaveChanges();
+                Location l31 = new Location();
                 {
-                    Id = 31,
-                    Name = "Desert 3 Cave 1",
-                    Image = "https://i.imgur.com/PEGIMJ9.jpg"
+                    l31.Id = 31;
+                    l31.Name = "Desert 3 Cave 1";
+                    l31.Image = "https://i.imgur.com/PEGIMJ9.jpg";
                 };
-
-                Location l32 = new Location
+                _context.Location.Add(l31);
+                _context.SaveChanges();
+                Location l32 = new Location();
                 {
-                    Id = 32,
-                    Name = "Desert 3 Cave 2",
-                    Image = "https://i.imgur.com/9HVBQJM.jpg"
+                    l32.Id = 32;
+                    l32.Name = "Desert 3 Cave 2";
+                    l32.Image = "https://i.imgur.com/9HVBQJM.jpg";
                 };
-
-                Location l33 = new Location
+                _context.Location.Add(l32);
+                _context.SaveChanges();
+                Location l33 = new Location();
                 {
-                    Id = 33,
-                    Name = "Desert 4",
-                    Image = "https://i.imgur.com/43sMyuW.jpg"
+                    l33.Id = 33;
+                    l33.Name = "Desert 4";
+                    l33.Image = "https://i.imgur.com/43sMyuW.jpg";
                 };
-
-                Location l34 = new Location
+                _context.Location.Add(l33);
+                _context.SaveChanges();
+                Location l34 = new Location();
                 {
-                    Id = 34,
-                    Name = "Desert 5 (Oasis 1)",
-                    Image = "https://i.imgur.com/ttAZqXU.jpg"
+                    l34.Id = 34;
+                    l34.Name = "Desert 5 (Oasis 1)";
+                    l34.Image = "https://i.imgur.com/ttAZqXU.jpg";
                 };
-
-                Location l35 = new Location
+                _context.Location.Add(l34);
+                _context.SaveChanges();
+                Location l35 = new Location();
                 {
-                    Id = 35,
-                    Name = "Oasis 2",
-                    Image = "https://i.imgur.com/7PNVIzU.jpg"
+                    l35.Id = 35;
+                    l35.Name = "Oasis 2";
+                    l35.Image = "https://i.imgur.com/7PNVIzU.jpg";
                 };
-
-                Location l36 = new Location
+                _context.Location.Add(l35);
+                _context.SaveChanges();
+                Location l36 = new Location();
                 {
-                    Id = 36,
-                    Name = "Oasis 3",
-                    Image = "https://i.imgur.com/5b3bvbT.jpg"
+                    l36.Id = 36;
+                    l36.Name = "Oasis 3";
+                    l36.Image = "https://i.imgur.com/5b3bvbT.jpg";
                 };
-
-                Location l37 = new Location
+                _context.Location.Add(l36);
+                _context.SaveChanges();
+                Location l37 = new Location();
                 {
-                    Id = 37,
-                    Name = "Oasis 4",
-                    Image = "https://i.imgur.com/Pr3fzzh.jpg"
+                    l37.Id = 37;
+                    l37.Name = "Oasis 4";
+                    l37.Image = "https://i.imgur.com/Pr3fzzh.jpg";
                 };
-
-                Location l38 = new Location
+                _context.Location.Add(l37);
+                _context.SaveChanges();
+                Location l38 = new Location();
                 {
-                    Id = 38,
-                    Name = "Ruins 1",
-                    Image = "https://i.imgur.com/ySWJX0x.jpg"
+                    l38.Id = 38;
+                    l38.Name = "Ruins 1";
+                    l38.Image = "https://i.imgur.com/ySWJX0x.jpg";
                 };
-
-                 Location l39 = new Location
+                _context.Location.Add(l38);
+                _context.SaveChanges();
+                Location l39 = new Location();
                 {
-                    Id = 39,
-                    Name = "Ruins 2",
-                    Image = "https://i.imgur.com/h4Kij1b.jpg"
+                    l39.Id = 39;
+                    l39.Name = "Ruins 2";
+                    l39.Image = "https://i.imgur.com/h4Kij1b.jpg";
                 };
-
-                 Location l40 = new Location
+                _context.Location.Add(l39);
+                _context.SaveChanges();
+                Location l40 = new Location();
                 {
-                    Id = 40,
-                    Name = "Ruins 2 (Right)",
-                    Image = "https://i.imgur.com/E1sEBPj.jpg"
+                    l40.Id = 40;
+                    l40.Name = "Ruins 2 (Right)";
+                    l40.Image = "https://i.imgur.com/E1sEBPj.jpg";
                 };
-
-                 Location l41 = new Location
+                _context.Location.Add(l40);
+                _context.SaveChanges();
+                Location l41 = new Location();
                 {
-                    Id = 41,
-                    Name = "Ruins 2 (Left)",
-                    Image = "https://i.imgur.com/yVHOvzpg.jpg"
+                    l41.Id = 41;
+                    l41.Name = "Ruins 2 (Left)";
+                    l41.Image = "https://i.imgur.com/yVHOvzpg.jpg";
                 };
-
-                 Location l42 = new Location
+                _context.Location.Add(l41);
+                _context.SaveChanges();
+                Location l42 = new Location();
                 {
-                    Id = 42,
-                    Name = "Ruins 3 (Left)",
-                    Image = "https://i.imgur.com/m00FbKj.jpg"
+                    l42.Id = 42;
+                    l42.Name = "Ruins 3 (Left)";
+                    l42.Image = "https://i.imgur.com/m00FbKj.jpg";
                 };
-
-                 Location l43 = new Location
+                _context.Location.Add(l42);
+                _context.SaveChanges();
+                Location l43 = new Location();
                 {
-                    Id = 43,
-                    Name = "Cave 1",
-                    Image = "https://i.imgur.com/cUfMnf8.jpg"
+                    l43.Id = 43;
+                    l43.Name = "Cave 1";
+                    l43.Image = "https://i.imgur.com/cUfMnf8.jpg";
                 };
-
-                Location l44 = new Location
+                _context.Location.Add(l43);
+                _context.SaveChanges();
+                Location l44 = new Location();
                 {
-                    Id = 44,
-                    Name = "Cave 2",
-                    Image = "https://i.imgur.com/QUNi8wN.jpg"
+                    l44.Id = 44;
+                    l44.Name = "Cave 2";
+                    l44.Image = "https://i.imgur.com/QUNi8wN.jpg";
                 };
-
-                Location l45 = new Location
+                _context.Location.Add(l44);
+                _context.SaveChanges();
+                Location l45 = new Location();
                 {
-                    Id = 45,
-                    Name = "Cloud City 1",
-                    Image = "https://i.imgur.com/sKG8TGz.jpg"
+                    l45.Id = 45;
+                    l45.Name = "Cloud City 1";
+                    l45.Image = "https://i.imgur.com/sKG8TGz.jpg";
                 };
-
-                Location l46 = new Location
+                _context.Location.Add(l45);
+                _context.SaveChanges();
+                Location l46 = new Location();
                 {
-                    Id = 46,
-                    Name = "Cloud City 2",
-                    Image = "https://i.imgur.com/awh2Lzd.jpg"
+                    l46.Id = 46;
+                    l46.Name = "Cloud City 2";
+                    l46.Image = "https://i.imgur.com/awh2Lzd.jpg";
                 };
-
+                _context.Location.Add(l46);
+                _context.SaveChanges();
             }
         }
 

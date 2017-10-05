@@ -1,0 +1,38 @@
+helms
+	leather cap https://i.imgur.com/tFG1KOM.png
+	chainmail helm https://i.imgur.com/G3rbn1J.png
+	plate helm https://i.imgur.com/MSLjTpx.png
+
+armors
+	chainmail armor https://i.imgur.com/uuDawKP.png
+	leather bracers https://i.imgur.com/iAdsqt0.png
+	platemail armor https://i.imgur.com/ilIaLPc.png
+	quilted armor https://i.imgur.com/9oadoje.png
+	studed leather armor https://i.imgur.com/QcXVP0b.png
+
+blunt weapons
+	maul https://i.imgur.com/hXAEbM1.png
+	morningstar https://i.imgur.com/47MXsHr.png
+	warhammer https://i.imgur.com/nNjnfMu.png
+swords
+	rusty sword https://i.imgur.com/LARZT7I.png
+	wooden sword https://i.imgur.com/B6Ul0mf.jpg
+	long sword https://i.imgur.com/qFl4976.png
+	EPIC sword https://i.imgur.com/poj0jfC.png
+
+daggers
+	rusty dagger https://i.imgur.com/50DTMnJ.png
+	twin daggers https://i.imgur.com/1BCiVsW.png
+	dragon dagger https://i.imgur.com/kwPiOCK.png
+wands
+	explosive staff https://i.imgur.com/u0JVNz2.png
+	fire wand https://i.imgur.com/Hx5cg5S.png
+	ice wand https://i.imgur.com/Do8tVyQ.png
+unique
+	golden ball https://i.imgur.com/RvJZNk9.jpg
+	golden paddle https://i.imgur.com/feoJp0d.png
+	sweat bands https://i.imgur.com/x28nL5x.png
+pots
+	small pot https://i.imgur.com/EmmAL5V.png
+	med pot https://i.imgur.com/qDkCEFe.png
+	large pot https://i.imgur.com/DdBNUSi.png

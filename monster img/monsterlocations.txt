@@ -1,0 +1,27 @@
+monsters
+	bear https://i.imgur.com/9BpFkIX.png
+	cactus patch kids https://i.imgur.com/qKEAK4k.jpg
+	desert yeti https://i.imgur.com/O9AH2iE.png
+	evil hotdog https://i.imgur.com/vRWj8Yt.png
+	evil knight https://i.imgur.com/UlqCtjh.png
+	dark mage https://i.imgur.com/i7gpSkr.png
+	frozen banshee https://i.imgur.com/7z1Ovo2.png
+	frost troll https://i.imgur.com/p3esL4H.jpg
+	giant snake https://i.imgur.com/eRN11KR.png
+	goblin https://i.imgur.com/gyIHymO.png
+	hooded king harrison https://i.imgur.com/QeYrLVx.png
+	king of redwood https://i.imgur.com/aNaEKmW.jpg
+	lava dragon https://i.imgur.com/LROimXT.jpg
+	magma snake https://i.imgur.com/vY9qsKA.png
+	muad'dib https://i.imgur.com/XwCpGCs.png
+	mummy https://i.imgur.com/DbxfIiD.png
+	old man https://i.imgur.com/Ue8lKY1.png
+	ork https://i.imgur.com/PYGVUix.png
+	rock golem https://i.imgur.com/2ZJ280K.png
+	sand worm https://i.imgur.com/PSJ2dEv.png
+	ice giant https://i.imgur.com/1Aj1njR.png
+	torchered programmer https://i.imgur.com/C7pmDXw.png
+	toxic cloud https://i.imgur.com/l0hl017.png
+	vicious cloud dog https://i.imgur.com/tgvAYnF.jpg
+	imp https://i.imgur.com/iCaGpRE.png
+	wolf https://i.imgur.com/AvbsjzM.png
